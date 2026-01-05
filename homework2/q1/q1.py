@@ -26,7 +26,7 @@ BASE_DIR="homework2/q1/"
 #
 # No softmax, no max pooling:
 # Loss: 0.0000 | Val Acc: 0.9252 | Test Acc: 0.9249 | Time: 8.73 sec
-# Total training time: 147.14 minutes (8828.69 seconds)
+# Total training time: 29.08 minutes (1744.69 seconds)
 # Final Test acc: 0.9249
 #
 # With softmax:
@@ -45,8 +45,8 @@ BASE_DIR="homework2/q1/"
 # Final Test acc: 0.8661
 #
 
-with_maxpool=True
-with_softmax=True
+with_maxpool=False
+with_softmax=False
 batch_size = 64
 learning_rate = 0.001
 model = Q1Net(with_softmax, with_maxpool)
