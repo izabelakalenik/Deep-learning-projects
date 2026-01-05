@@ -4,6 +4,10 @@ from utils import masked_mse_loss, masked_spearman_correlation, load_rnacompete_
 import q2_1_cnn as cnn_module
 import q2_1_lstm as lstm_module
 
+# Training results
+# Final Test Spearman Correlation: 0.6064 (CNN_Model)
+# Final Test Spearman Correlation: 0.6595 (LSTM_Model)
+
 def train_network(model_class, model_name, protein='RBFOX1', epochs=20, batch_size=64, lr=0.001):
     print(f"\n--- Training {model_name} on {protein} ---")
     
@@ -84,7 +88,7 @@ def train_network(model_class, model_name, protein='RBFOX1', epochs=20, batch_si
     
     plot(range(1, epochs+1), 
          {'Train Loss': train_losses, 'Val Loss': val_losses}, 
-         filename=f"{model_name}_loss_plot.png")
+         filename=f"homework2/q2/charts/{model_name}_loss_plot.png")
     
     return test_corr
 

@@ -5,14 +5,14 @@ class RNAConfig:
     """Global configuration for the RNAcompete Data Pipeline."""
     
     # Data Path
-    DATA_PATH: str = "norm_data.txt" #NOTE: Only change this if you want to use a different path
+    DATA_PATH: str = "homework2\q2\\norm_data.txt" #NOTE: Only change this if you want to use a different path
     
     # Metadata is an Excel file
-    METADATA_PATH: str = "metadata.xlsx" #NOTE: Only change this if you want to use a different path
+    METADATA_PATH: str = "homework2\q2\metadata.xlsx" #NOTE: Only change this if you want to use a different path
     METADATA_SHEET: str = "Master List--Plasmid Info"
     
     # Save Path
-    SAVE_DIR: str = "data" #NOTE: Only change this if you want to use a different path
+    SAVE_DIR: str = "homework2\q2\data" #NOTE: Only change this if you want to use a different path
     
     # Sequence Parameters
     SEQ_MAX_LEN: int = 41
