@@ -12,7 +12,7 @@ class RNAConfig:
     METADATA_SHEET: str = "Master List--Plasmid Info"
     
     # Save Path
-    SAVE_DIR: str = "homework2\q2\data" #NOTE: Only change this if you want to use a different path
+    SAVE_DIR: str = "homework2\q2\\result_data" #NOTE: Only change this if you want to use a different path
     
     # Sequence Parameters
     SEQ_MAX_LEN: int = 41

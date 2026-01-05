@@ -16,11 +16,11 @@ class RNA_LSTM(nn.Module):
         self.fc = nn.Linear(hidden_dim * 2, 1)
 
     def forward(self, x):
-        # x shape: (Batch, 41, 4) -> No permutation needed for LSTM with batch_first=True
-        
-        # LSTM output: (Batch, Seq_Len, Hidden_Dim * 2)
+        # x shape: (batch, 41, 4) -> no permutation needed for LSTM with batch_first=True
+
+        # LSTM output: (batch, seq_len, hidden_dim * 2)
         out, _ = self.lstm(x)
         
-        out = torch.mean(out, dim=1) # Average over sequence length
+        out = torch.mean(out, dim=1) # average over sequence length
         
         return self.fc(out)
