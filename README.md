@@ -1,20 +1,32 @@
-# Deep Learing
+# Deep learning projects
 
-Homework 1 - Deadline: 12 Dec 2025
+This repository contains two projects developed for the Deep Learning course, realized in a group of 3. Projects descriptions can be found in [docs](./docs) directory.
 
-Homework 2 - Deadline: 7 Jan 2026
+## Overview
 
----
+### 1. Computer Vision & Fundamentals
+Implementation of classic and convolutional neural networks for image recognition.
 
-### Overleaf LaTeX reports
-* Homework 1:
-https://www.overleaf.com/3996876462wrdkkzcczvjz#9eb1b5
+* **Tasks**: Handwritten letter classification (EMNIST) and medical cell classification (BloodMNIST).
 
-* Homework 2:
-https://www.overleaf.com/9567733545wwrhgxvdwzkb#3fd0b0
+* **Architectures**: Perceptron, Logistic Regression (manual SGD), Multi-Layer Perceptron (backprop from scratch), and CNNs (PyTorch).
 
-### Fenix course website
-https://fenix.tecnico.ulisboa.pt/disciplinas/AP112/2025-2026/1-semestre/pagina-inicial
+* **Key focus**: Impact of hyperparameters, activation functions (Softmax vs. Sparsemax), and pooling layers on performance.
 
-### Piaza
-https://piazza.com/class/mhgmnjwamnr68w/post/97
+### 2. Genomic Sequence Modeling (RBPs Interaction)
+Predicting RNA-binding protein (RBP) interaction using advanced sequence modeling.
+
+* **Task**: Regression problem to predict binding affinity (affinity) for the RBFOX1 protein.
+
+* **Architectures**: Implementation and comparison of CNN, RNN (LSTM/GRU), and Transformers.
+
+* **Advanced Features**: Integration of Self-Attention mechanisms and Attention-pooling to improve spatial dependency learning.
+
+* **Metrics**: Optimized using masked MSE loss and evaluated via Spearman Rank Correlation.
+
+## Technologies
+* Python
+
+* PyTorch, NumPy, MedMNIST
+
+* Matplotlib (visualization), Scipy (Spearman correlation)
